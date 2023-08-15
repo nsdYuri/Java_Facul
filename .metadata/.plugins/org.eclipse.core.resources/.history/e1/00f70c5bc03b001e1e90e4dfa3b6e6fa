@@ -1,0 +1,31 @@
+package br.com.fiap.collections.view;
+import java.util.HashMap;
+import java.util.Scanner;
+
+public class ExemploMapa {
+	public static void main(String[] args) {
+		
+		//Criar um mapa de Estados
+		HashMap<String, String> mapa = new HashMap<>();
+		
+		//Adcionar 3 estados no mapa
+		mapa.put("SP", "São paulo");
+		mapa.put("BA", "Bahia");
+		mapa.put("ES", "Espirito Santo");
+		
+		//Recuperar o valor da chave BA 
+		System.out.println(mapa.get("BA"));	
+		
+		//Exibir a quanidade de elementos no mapa
+		System.out.println(mapa.size());
+		
+		//Remover SP do mapa
+		System.out.println(mapa.remove("SP"));
+		
+		//Recuperar todas as chaves do mapa
+		System.out.println(mapa.values());
+		
+		
+		//Exibir os dados como padrão "Nome Estado (sigla)"
+	}
+}
